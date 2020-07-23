@@ -1,0 +1,7 @@
+https://iancoleman.io/bip39/#english
+https://live.blockcypher.com/btc-testnet/address/mmWEH488pYtXQtXhY48VYPsenBkN1D3mUD/
+https://github.com/bitcoinjs/bitcoinjs-lib
+https://github.com/bitcoinjs/coinselect
+https://github.com/bitcoinjs/bitcoinjs-lib/issues/1334
+https://bitcoin.stackexchange.com/questions/64733/what-is-p2pk-p2pkh-p2sh-p2wpkh-eli5
+
