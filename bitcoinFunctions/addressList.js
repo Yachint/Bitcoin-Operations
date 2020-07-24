@@ -11,12 +11,13 @@ const bip32 = require("bip32");
  * @returns A list of addresses
  */
 
-const address_list = (network, xpub, start, end) => {
+const address_list = (network, xpub, chain, start, end) => {
+  let node = bip32.fromBase58(xpub, network);
   const addressList = [];
 
   for (var i = start; i <= end; i++) {
     const { address } = bitcoin.payments.p2pkh({
-      pubkey: bip32.fromBase58(xpub).derive(i).publicKey,
+      pubkey: node.derivePath(`${chain}/${i}`).publicKey,
       network: network,
     });
 
